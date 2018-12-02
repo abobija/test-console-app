@@ -1,4 +1,6 @@
-﻿namespace TestConsoleApp.Calculator
+﻿using System;
+
+namespace TestConsoleApp.Calculator
 {
     public class Division : AbstractOperation
     {
@@ -9,6 +11,12 @@
             for(int i = 1; i < Operands.Count; i++)
             {
                 var operand = Operands[i];
+
+                if (operand == 0d)
+                {
+                    throw new DivideByZeroException();
+                }
+
                 result /= operand;
             }
 
