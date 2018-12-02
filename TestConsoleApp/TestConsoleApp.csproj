@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculator\AbstractOperation.cs" />
+    <Compile Include="Calculator\Addition.cs" />
+    <Compile Include="Calculator\Calculator.cs" />
+    <Compile Include="Calculator\Division.cs" />
+    <Compile Include="Calculator\IOperation.cs" />
+    <Compile Include="Calculator\Multiplication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Calculator\Subtraction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
