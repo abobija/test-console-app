@@ -45,7 +45,7 @@
   <ItemGroup>
     <Compile Include="Calculator\AbstractOperation.cs" />
     <Compile Include="Calculator\Addition.cs" />
-    <Compile Include="Calculator\Calculator.cs" />
+    <Compile Include="Calculator\Calc.cs" />
     <Compile Include="Calculator\Division.cs" />
     <Compile Include="Calculator\IOperation.cs" />
     <Compile Include="Calculator\Multiplication.cs" />

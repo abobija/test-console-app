@@ -2,7 +2,7 @@
 
 namespace TestConsoleApp.Calculator
 {
-    public class Calculator
+    public class Calc
     {
         protected List<IOperation> Operations = new List<IOperation>();
 
