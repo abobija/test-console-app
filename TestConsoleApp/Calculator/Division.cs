@@ -12,10 +12,10 @@ namespace TestConsoleApp.Calculator
             {
                 var operand = Operands[i];
 
-                /*if (operand == 0d)
+                if (operand == 0d)
                 {
                     throw new DivideByZeroException();
-                }*/
+                }
 
                 result /= operand;
             }
