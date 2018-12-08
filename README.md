@@ -1,2 +1,2 @@
 # test-console-app
-Dummy console application written in C#
+Console application written in C#
