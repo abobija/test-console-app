@@ -23,5 +23,14 @@ namespace TestConsoleApp.UnitTests
 
             Assert.AreEqual(sub.Calculate(), 4d);
         }
+
+        [Test]
+        public void SubstractionReturnsCorrectNegativeValue()
+        {
+            var sub = new Subtraction();
+            sub.AddOperands(4, 6);
+
+            Assert.AreEqual(sub.Calculate(), -2d);
+        }
     }
 }
