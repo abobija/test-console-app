@@ -1,1 +1,9 @@
 language: csharp
+solution: TestConsoleApp.sln
+
+install:
+  - nuget restore TestConsoleApp.sln
+  - nuget install NUnit.Console -Version 3.9.0 -OutputDirectory testrunner
+script:
+  - msbuild /p:Configuration=Release TestConsoleApp.sln
+  - mono ./testrunner/NUnit.ConsoleRunner.3.9.0/tools/nunit3-console.exe ./TestConsoleApp.UnitTests/bin/Release/TestConsoleApp.UnitTests.dll
